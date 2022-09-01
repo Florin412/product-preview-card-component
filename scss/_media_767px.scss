@@ -1,0 +1,32 @@
+@use "variables" as *;
+
+@media (max-width: 767px) {
+  .card-container {
+    grid-template-columns: minmax(auto, 400px);
+
+    .img-section {
+      .perfume-img-desktop {
+        display: none;
+      }
+
+      .perfume-img-mobile {
+        display: block;
+        max-width: 100%;
+        min-height: auto;
+        border-top-left-radius: $radius;
+        border-top-right-radius: $radius;
+      }
+    }
+
+    .info-section {
+      border-top-right-radius: unset;
+      border-bottom-left-radius: $radius;
+
+      .header {
+        .title {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}

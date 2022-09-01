@@ -1,0 +1,101 @@
+@use "variables" as *;
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 300px));
+
+  .img-section {
+    max-width: 100%;
+
+    .perfume-img-mobile {
+      display: none;
+    }
+
+    .perfume-img-desktop {
+      max-width: 100%;
+      min-height: 100%;
+      border-top-left-radius: $radius;
+      border-bottom-left-radius: $radius;
+    }
+  }
+
+  .info-section {
+    max-width: 100%;
+    padding: 2rem;
+    background-color: $white;
+    border-top-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+    color: $dark-grayish-blue;
+
+    .header {
+      .subtitle {
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 5px;
+      }
+
+      .title {
+        color: $very-dark-blue;
+        font-size: 2rem;
+        margin-top: 1.3rem;
+        margin-bottom: 2rem;
+        line-height: 1;
+        font-family: "Fraunces", serif;
+      }
+    }
+
+    .description {
+      text-align: justify;
+      margin-bottom: 1.5rem;
+      font-size: 14px;
+    }
+
+    .price {
+      display: flex;
+      align-items: center;
+
+      .new-price {
+        color: $dark-cyan;
+        font-size: 2rem;
+        margin-right: 1.2rem;
+        font-family: "Fraunces", serif;
+      }
+
+      .old-price {
+        text-decoration: line-through;
+        font-size: 1rem;
+      }
+    }
+
+    .add-to-cart-btn {
+      background-color: $dark-cyan;
+      padding: 1rem 3rem;
+      color: $white;
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: $radius;
+      font-weight: 700;
+      cursor: pointer;
+
+      .cart-icon {
+        margin-right: 1rem;
+        width: 1.25rem;
+      }
+
+      &:hover {
+        background-color: $very-dark-cyan;
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
