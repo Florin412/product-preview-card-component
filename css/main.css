@@ -87,6 +87,7 @@ html {
   border-radius: 0.6em;
   font-weight: 700;
   cursor: pointer;
+  transition: 0.1s linear;
 }
 .card-container .info-section .add-to-cart-btn .cart-icon {
   margin-right: 1rem;
@@ -94,6 +95,7 @@ html {
 }
 .card-container .info-section .add-to-cart-btn:hover {
   background-color: hsl(158deg, 36%, 27%);
+  scale: 1.05;
 }
 
 @media (max-width: 767px) {

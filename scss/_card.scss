@@ -79,6 +79,7 @@
       border-radius: $radius;
       font-weight: 700;
       cursor: pointer;
+      transition: 0.1s linear;
 
       .cart-icon {
         margin-right: 1rem;
@@ -87,6 +88,7 @@
 
       &:hover {
         background-color: $very-dark-cyan;
+        scale: 1.05;
       }
     }
   }
