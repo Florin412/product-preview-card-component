@@ -22,6 +22,7 @@ html {
 .card-container {
   display: grid;
   grid-template-columns: repeat(2, minmax(auto, 300px));
+  animation: card_drop 1s ease-in-out backwards;
 }
 .card-container .img-section {
   max-width: 100%;
@@ -118,6 +119,11 @@ html {
   }
   .card-container .info-section .header .title {
     font-size: 2.5rem;
+  }
+}
+@keyframes card_drop {
+  from {
+    transform: translateY(-100vh);
   }
 }
 

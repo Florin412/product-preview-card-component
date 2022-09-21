@@ -3,6 +3,7 @@
 .card-container {
   display: grid;
   grid-template-columns: repeat(2, minmax(auto, 300px));
+  animation: card_drop 1s ease-in-out backwards;
 
   .img-section {
     max-width: 100%;
